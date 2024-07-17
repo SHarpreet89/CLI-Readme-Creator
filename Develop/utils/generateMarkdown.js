@@ -6,8 +6,7 @@ function renderLicenseBadge(license) {
   return `![License](https://img.shields.io/badge/license-${license}-blue.svg)`;
 }
 
-// Function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link if there is no license it will return an empty string
 function renderLicenseLink(license) {
   if (!license) {
     return '';
@@ -15,8 +14,7 @@ function renderLicenseLink(license) {
   return `* [License](#license)`;
 }
 
-// Function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README If there is no license it will return an empty string
 function renderLicenseSection(license) {
   if (!license) {
     return '';
@@ -26,21 +24,62 @@ function renderLicenseSection(license) {
 This project is licensed under the ${license} license.`;
 }
 
-// Function to generate markdown for README
+// Function to generate markdown for README, if any item is not typed in by user, that field is ommited from the Readme.
 function generateMarkdown(data) {
-  return `# ${data.title}
+  let markdown = `# ${data.title}
 
 ${renderLicenseBadge(data.license)}
-
-## Description
-
-${data.description}
-
-${renderLicenseLink(data.license)}
-
-${renderLicenseSection(data.license)}
-
 `;
+
+  if (data.description) {
+    markdown += `
+## Description
+${data.description}
+`;
+  }
+
+  if (data.installation) {
+    markdown += `
+## Installation
+${data.installation}
+`;
+  }
+
+  if (data.usage) {
+    markdown += `
+## Usage
+${data.usage}
+`;
+  }
+
+  if (data.credits) {
+    markdown += `
+## Credits
+${data.credits}
+`;
+  }
+
+  if (data.contributing) {
+    markdown += `
+## Contributing
+${data.contributing}
+`;
+  }
+
+  if (data.tests) {
+    markdown += `
+## Tests
+${data.tests}
+`;
+  }
+
+  if (data.license) {
+    markdown += `
+${renderLicenseSection(data.license)}
+`;
+  }
+
+  return markdown;
 }
 
 module.exports = generateMarkdown;
