@@ -20,7 +20,7 @@ As a developer I wanted an app which would quickly let me create a professional 
 
 ## App Repository Link
 
-https://sharpreet89.github.io/Week6_Assignment_Weather-App/
+https://github.com/SHarpreet89/CLI-Readme-Creator
 
 ## Contact me
 
@@ -28,4 +28,4 @@ https://github.com/SHarpreet89
 
 ## Screenshot
 
-![Alt text](./assets/images/Website%20Image.png)
+![Alt text](./assets/images/App%20Image.png)
