@@ -24,7 +24,7 @@ function renderLicenseSection(license) {
 This project is licensed under the ${license} license.`;
 }
 
-// Function to generate markdown for README, if any item is not typed in by user, that field is ommited from the Readme.
+// Function to generate markdown for README, if any item is not typed in by user, that field is omitted from the Readme.
 function generateMarkdown(data) {
   let markdown = `# ${data.title}
 
@@ -52,13 +52,6 @@ ${data.usage}
 `;
   }
 
-  if (data.credits) {
-    markdown += `
-## Credits
-${data.credits}
-`;
-  }
-
   if (data.contributing) {
     markdown += `
 ## Contributing
@@ -77,6 +70,18 @@ ${data.tests}
     markdown += `
 ${renderLicenseSection(data.license)}
 `;
+  }
+
+  if (data.github || data.email) {
+    markdown += `
+## Questions
+`;
+    if (data.github) {
+      markdown += `* [GitHub](https://github.com/${data.github})\n`;
+    }
+    if (data.email) {
+      markdown += `* Email: ${data.email}\n`;
+    }
   }
 
   return markdown;

@@ -27,11 +27,6 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'credits',
-    message: 'Would you like to list any collaborators, third party assets or any tutorials?',
-  },
-  {
-    type: 'input',
     name: 'contributing',
     message: 'What are the contribution guidelines?',
   },
@@ -45,6 +40,16 @@ const questions = [
     name: 'license',
     message: 'Choose a license for your project:',
     choices: ['MIT', 'GPLv3', 'Apache 2.0', 'BSD 3-Clause', 'None'],
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'Enter your GitHub username:',
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'Enter your email address:',
   },
 ];
 

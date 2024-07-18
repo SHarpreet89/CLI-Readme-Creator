@@ -1,3 +1,31 @@
-# Professional README Generator Starter Code
+# CLI Readme Generator
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+## Description
+
+This app runs on the Command Line Interface and uses Inquirer, letting users answer few questions to generate a readme file.
+
+## User Story
+
+As a developer I wanted an app which would quickly let me create a professional Readme for a project.
+
+## Acceptance Criteria
+
+- When prompted for information about the application repository, a professional Readme is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions.
+- When a title for the project is entered, then it is dispalyed as the Title of the Readme.
+- When a description, installation instructions, usage information, contribution guidelines, and test instructions are entered, the information is appended to the relevant sections of the file.
+- When choosing a license for my application from a list of options, a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License.
+- When I enter my GitHub username, this is added to the section of the README entitled Questions, with a link to my GitHub profile.
+- When I enter my email address, this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions.
+- When a link is clicked in the Table of Contents, then we are taken to the corresponding section of the README.
+
+## App Repository Link
+
+https://sharpreet89.github.io/Week6_Assignment_Weather-App/
+
+## Contact me
+
+https://github.com/SHarpreet89
+
+## Screenshot
+
+![Alt text](./assets/images/Website%20Image.png)
