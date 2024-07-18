@@ -38,6 +38,19 @@ ${data.description}
 `;
   }
 
+  // Table of Contents
+  let tableOfContents = `
+## Table of Contents
+`;
+  if (data.installation) tableOfContents += `* [Installation](#installation)\n`;
+  if (data.usage) tableOfContents += `* [Usage](#usage)\n`;
+  if (data.contributing) tableOfContents += `* [Contributing](#contributing)\n`;
+  if (data.tests) tableOfContents += `* [Tests](#tests)\n`;
+  if (data.license) tableOfContents += `* [License](#license)\n`;
+  if (data.github || data.email) tableOfContents += `* [Questions](#questions)\n`;
+
+  markdown += tableOfContents;
+
   if (data.installation) {
     markdown += `
 ## Installation
