@@ -82,6 +82,7 @@ ${data.tests}
   if (data.license) {
     markdown += `
 ${renderLicenseSection(data.license)}
+${renderLicenseLink(data.license)}
 `;
   }
 
