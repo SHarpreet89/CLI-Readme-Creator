@@ -13,10 +13,6 @@ Inquirer Package will then be installed in your project folder by NPM.
 
 Run the app by typing node Index.js . The App will ask as series of questions, answering those will then generate a README file. If any fields are not required, leave them blank and they'll be skipped from inclusion in the README File.
 
-## APP Video Link
-
-The video for the App can be watched on this link - https://drive.google.com/file/d/1gp-Lyzz6d0yGq-rvmohOmO6t8yLGLMHQ/view
-
 ## User Story
 
 As a developer I wanted an app which would quickly let me create a professional Readme for a project.
