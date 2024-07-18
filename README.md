@@ -4,6 +4,10 @@
 
 This app runs on the Command Line Interface and uses Inquirer, letting users answer few questions to generate a readme file.
 
+## APP Walkthrough Video
+
+The App walkthrough video can be accessed via this link - https://drive.google.com/file/d/1gp-Lyzz6d0yGq-rvmohOmO6t8yLGLMHQ/view
+
 ## Installation Instructions
 
 Install by typing NPM Install in project folder.
